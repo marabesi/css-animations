@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      input {
+        padding: 10px;
+      }
+      input[type="email"] {
+        outline: none;
+        transition: all;
+        transition-duration: 500ms;
+        transition-delay: 0;
+        border: 2px solid #000000;
+        background: #ccc;
+      }
+      input[type="email"]:invalid {
+        border: 2px solid #f75050;
+        background: #ecb1b1;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="email" name="email" required/>
+      <input type="text" name="email" required/>
+      <input type="text" name="email" required/>
+    </form>
+  </body>
+</html>

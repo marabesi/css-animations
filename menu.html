@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      ul.animated li {
+        list-style: none;
+        background: #cccccc;
+        width: 100px;
+        border: 1px solid #000000;
+        margin-bottom: 2px;
+      }
+      ul.animated li ul {
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in;
+        transition-delay: 50ms;
+        transform: scale(1, 0);
+        transform-origin: top;
+      }
+      ul.animated li:hover ul {
+        transform: scale(1, 1);
+        display: block;
+      }
+
+      ul.without-animation {
+        width: 100px;
+        background: #c9c9c9;
+        list-style: none;
+      }
+      ul.without-animation li ul {
+        display: none;
+      }
+      ul.without-animation li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="animated">
+      <li>menu1
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </li>
+      <li>menu2
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="without-animation">
+      <li>
+        menu1
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
